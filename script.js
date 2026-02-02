@@ -16,15 +16,6 @@ yesBtn.addEventListener("click", () => {
   launchConfetti();
 });
 
-.photo {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 20px 0;
-  border: 4px solid #ff4d6d;
-}
-
 function launchConfetti() {
   for (let i = 0; i < 100; i++) {
     const confetti = document.createElement("div");
@@ -42,4 +33,5 @@ function launchConfetti() {
     setTimeout(() => confetti.remove(), 2000);
   }
 }
+
 
