@@ -3,11 +3,12 @@ const yesBtn = document.getElementById("yes");
 const message = document.getElementById("message");
 
 noBtn.addEventListener("mouseover", () => {
-  const x = Math.random() * 200 - 100;
-  const y = Math.random() * 200 - 100;
+  const x = Math.random() * 400 - 200;
+  const y = Math.random() * 400 - 200;
 
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
 });
+
 
 yesBtn.addEventListener("click", () => {
   message.innerHTML = "Yayyy! 💖 I knew you’d say yes 😍";
@@ -21,3 +22,4 @@ yesBtn.addEventListener("click", () => {
   margin: 20px 0;
   border: 4px solid #ff4d6d;
 }
+
