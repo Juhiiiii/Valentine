@@ -12,3 +12,12 @@ noBtn.addEventListener("mouseover", () => {
 yesBtn.addEventListener("click", () => {
   message.innerHTML = "Yayyy! 💖 I knew you’d say yes 😍";
 });
+
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 4px solid #ff4d6d;
+}
