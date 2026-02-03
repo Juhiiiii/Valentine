@@ -85,6 +85,10 @@ yesBtn.addEventListener("click", () => {
   clearTimeout(blinkTimeout);
 
   mainText.innerHTML = "Ashish, Will you marry me? 💍";
+  mainText.classList.remove("shake");
+  void mainText.offsetWidth; // force reflow
+  mainText.classList.add("shake");
+
   message.innerHTML = "YES! YAYYY 💖 I knew it, Ashish 😍 You just made me the happiest girl 💖";
   // document.getElementById("video").style.display = "block";
   document.querySelector(".videos").style.display = "flex";
